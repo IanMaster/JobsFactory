@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Hello, world!</title>
+</head>
+<body class="bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link pl-4 pr-4" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4 pr-4" href="#">Caracteriasticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4 pr-4" href="#">Detalles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4 pr-4 disabled" href="#" tabindex="-1" aria-disabled="true">Desactivado</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <form id="form">
+                            <div class="form-group">
+                                <label for="negocio">Negocio</label>
+                                <input type="text" class="form-control" id="negocio" name="negocio" aria-describedby="negocioHelp" placeholder="Ingresa tu negocio" required>
+                                <small id="negocioHelp" class="form-text text-muted">Recuerda que el nombre de tu negocio es tu identificador unico.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraeña</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="checkMe" name="checkMe">
+                                <label class="form-check-label" for="checkMe">Recordar mis credenciales</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-info btn-block">Acceder</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#form").submit(function (e) {
+                e.preventDefault();
+                var data = $(this).serializeArray();
+                LogIn(data);
+            });
+        });
+        function LogIn(data) {
+            //Loader();
+            var login = {
+                Usuario: 'Arturo',
+                Password: 1234
+            };
+            $.ajax({ url: 'http://localhost/api/Login/Post', type: 'POST', data: login, dataType: 'json' })
+                .then(function (data) {
+                    //ValidaServer(data);
+                    window.location.href = 'Inicio.html';
+                })
+                .fail(function (e) {
+                    console.error(e.statusText);
+                })
+                .always(function () {
+                    //Loader(!1);
+                });
+        }
+    </script>
+</body>
+</html>

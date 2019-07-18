@@ -1,0 +1,380 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="Fonts/fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet" />
+    <link href="Content/sweetalert.css" rel="stylesheet" />
+    <title>Hello, world!</title>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link pl-4 pr-4" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4 pr-4" href="#">Caracteriasticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4 pr-4" href="#">Detalles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4 pr-4 disabled" href="#" tabindex="-1" aria-disabled="true">Desactivado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4 pr-4" href="#">Catalogos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="mb-3">
+            <h4><i class="fas fa-th-list text-primary"></i> Catalogo de proveedores</h4>
+        </div>
+        <div class="mb-2">
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalNewItem"><i class="fa fa-plus"></i> Nuevo proveedor</button>
+        </div>
+        <div class="table-responsive-lg">
+            <table id="table" class="table table-bordered table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Telefono casa</th>
+                        <th>Telefono movil</th>
+                        <th>RFC</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>55 55 55 55</td>
+                        <td>55 55 55 55 55</td>
+                        <td>xxxxxxxx</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fa fa-edit"></i> Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash-alt"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <!-- Button trigger modal -->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNewItem">
+        Launch demo modal
+    </button>-->
+    <!-- Modal -->
+    <form id="formNew">
+        <div class="modal fade" id="modalNewItem" tabindex="-1" role="dialog" aria-labelledby="modalNewItemTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalNewItemTitle"><i class="fas fa-plus-circle text-primary"></i> Nuevo registro</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telCasa">Tel casa</label>
+                            <input type="text" class="form-control form-control-sm" id="telCasa" placeholder="Tel casa">
+                        </div>
+                        <div class="form-group">
+                            <label for="telMovil">Tel movil</label>
+                            <input type="text" class="form-control form-control-sm" id="telMovil" placeholder="Tel movil">
+                        </div>
+                        <div class="form-group">
+                            <label for="RFC">RFC</label>
+                            <input type="text" class="form-control form-control-sm" id="RFC" placeholder="RFC" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal"><i class="fas fa-ban"></i> Cerrar</button>
+                        <button type="submit" class="btn btn-primary btn-sm" id="btn-formNewSubmit"><i class="fas fa-save"></i> Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Modal -->
+    <form id="formEdit">
+        <div class="modal fade" id="modalEditItem" tabindex="-1" role="dialog" aria-labelledby="modalEditItemTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalEditItemTitle"><i class="fas fa-plus-circle text-primary"></i> Editar registro</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telCasa">Tel casa</label>
+                            <input type="text" class="form-control form-control-sm" id="telCasa" placeholder="Tel casa">
+                        </div>
+                        <div class="form-group">
+                            <label for="telMovil">Tel movil</label>
+                            <input type="text" class="form-control form-control-sm" id="telMovil" placeholder="Tel movil">
+                        </div>
+                        <div class="form-group">
+                            <label for="RFC">RFC</label>
+                            <input type="text" class="form-control form-control-sm" id="RFC" placeholder="RFC" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal"><i class="fas fa-ban"></i> Cerrar</button>
+                        <button type="submit" class="btn btn-primary btn-sm" id="btn-formNewSubmit"><i class="fas fa-save"></i> Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.dataTables.min.js"></script>
+    <script src="Scripts/dataTables.bootstrap4.min.js"></script>
+    <script src="Scripts/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable();
+
+            //LoadDataGrid({ url: 'http://localhost/api/Proveedores/Get', type: 'post', data: data }, '#table');
+
+
+            $('#formNew').on('submit', function (e) {
+                e.preventDefault();
+                var data = {
+                    Nombre: $('#nombre').val(),
+                    TelCasa: $('#telCasa').val(),
+                    TelMovil: $('#telMovil').val(),
+                    RFC: $('#RFC').val()
+                };
+
+                Post({
+                    url: 'http://localhost/PuntoDeVentaService/api/Proveedores/Post', type: 'post', data: data });
+            });
+
+            $('.btn-edit').on('click', function () {
+                $('#modalEditItem').modal('show');
+            });
+
+            $('.btn-delete').on('click', function () {
+                swal({
+                    title: "Eliminar.",
+                    text: "Desea eliminar el registro seleccionado?",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonClass: "btn-danger btn-sm",
+                    cancelButtonClass: 'btn-primary btn-sm',
+                    confirmButtonText: "Eliminar",
+                    closeOnConfirm: false
+                },
+                    function () {
+                        Delete();
+                    });
+            });
+
+        });
+
+        function Delete() {
+
+        }
+        function Post(ajax) {
+            $.ajax(ajax)
+                .then((data) => {
+                    alert('El usuario se dio de alta correctamente.');
+                })
+                .always(() => {
+
+                });
+        }
+        function LoadDataGrid(ajax, gridId) {
+            $.ajax(ajax)
+                .then((data) => {
+                    DataBind(data, gridId);
+                })
+                .fail((e) => {
+                    console.error('Error ajax', e.statusText);
+                })
+                .always(() => {
+
+                });
+        }
+        function DataBind(data, gridId) {
+            data.forEach((item) => {
+                tr = $('<tr>');
+                item.forEach((prop) => {
+                    td = $('<td>');
+                    td.append(prop);
+                    tr.append(td);
+                });
+                $(gridId).append(tr);
+            });
+        }
+        
+    </script>
+</body>
+</html>

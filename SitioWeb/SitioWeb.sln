@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "health", "..\..\..\Downloads\health\health", "{3CE1C6CB-2490-499B-8B4A-44820C3BABE5}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49797"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Downloads\health\health\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49797\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49797"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Downloads\health\health\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49797\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49797"
+		SlnRelativePath = "..\..\..\Downloads\health\health\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CE1C6CB-2490-499B-8B4A-44820C3BABE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE1C6CB-2490-499B-8B4A-44820C3BABE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55EACB3B-7409-4BDE-8A27-7F8AE4D863EE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://arturocano.visualstudio.com/
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = ..\\..\\..\\Downloads\\health\\health
+		SccProjectName1 = health
+		SccLocalPath1 = ..\\..\\..\\Downloads\\health\\health
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.VersionControlPolicy = $1
+	EndGlobalSection
+EndGlobal
